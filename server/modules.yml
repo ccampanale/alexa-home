@@ -3,7 +3,8 @@
 
 modules:
   # - hue
-  - nest
-  - jriver
-  - uber
-  - google_calendar
+  #- nest
+  #- jriver
+  #- uber
+  #- google_calendar
+   - samsung_remote

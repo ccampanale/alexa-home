@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd $ALEXA_HOME
+#cd $ALEXA_HOME
 cd server
-bundle exec ruby app.rb &
+exec ruby app.rb &
 cd ..
 cd scraper
-bundle exec ruby watir-login.rb &
+exec ruby watir-login.rb &

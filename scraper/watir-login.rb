@@ -10,7 +10,7 @@ class AlexaCrawler
   REFRESH_TIME_IN_MINUTES = 32
 
   def initialize
-    self.browser = Watir::Browser.new
+    self.browser = Watir::Browser.new :chrome
     self.last_command = ""
     super
   end
