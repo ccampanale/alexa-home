@@ -1,0 +1,11 @@
+---
+remoteinfo:
+  ip:         '192.168.1.2'
+  mac:        '00-1C-C0-A2-F9-AA'
+  name:       'alexa-remote'
+  app:        'amazone-echo'
+
+samsung_tvs:
+  bedroom:
+    name:     'UN46C6500'
+    ip:       '10.0.0.9'
