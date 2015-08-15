@@ -1,4 +1,5 @@
 require 'watir-webdriver'
+require 'headless'
 
 class AlexaCrawler
 
@@ -10,6 +11,8 @@ class AlexaCrawler
   REFRESH_TIME_IN_MINUTES = 32
 
   def initialize
+    headless = Headless.new
+    headless.start
     self.browser = Watir::Browser.new
     self.last_command = ""
     super
@@ -17,6 +20,7 @@ class AlexaCrawler
 
   def kill
     browser.close
+    headless.destroy
   end
   
   def keep_alive
