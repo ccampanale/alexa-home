@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -ef | grep ruby | grep "app.rb|watir"
+ps -ef | grep ruby | egrep "app|watir"
